@@ -4,6 +4,8 @@ For brief introduction, check out the [project page](https://seungjuhan.me/norml
 
 To read more, check out the [paper](https://arxiv.org/abs/2310.10418)!
 
+- [23/10/17] The dataset is not currently available for download. We will release the dataset soon. Stay tuned!
+
 ![NormLens Teaser](./assets/normlens_fig1.png)
 
 **Commonsense norms are dependent on their context. What if the context is given by image?**
@@ -12,7 +14,7 @@ Our NormLens dataset is a multimodal benchmark to evaluate how well models align
 
 ![NormLens Details](./assets/normlens_fig2.png)
 
-## How Can I Use the Dataset?
+## How can I use NormLens?
 
 ### Using the script provided in this repository
 First, install the package:
@@ -40,7 +42,7 @@ wget https://storage.googleapis.com/ai2-mosaic-public/projects/normlens/normlens
 unzip normlens_dataset.zip
 ```
 
-## Evaluating Models on NormLens-HA/MA
+## Evaluating models on NormLens-HA/MA
 
 First, you should bring your model's predictions into the specific format.
 The prediction file should be a jsonl file, where each line is a json object with the following format:
@@ -65,7 +67,7 @@ python evaluation.py --reference-path $REFERENCE_PATH \
                      --output-csv-path $OUTPUT_CSV_PATH
 ```
 
-## How Can We Collect More Data?
+## How can we collect more data?
 
 ![NormLens Pipeline](./assets/normlens_fig3.png)
 
@@ -107,7 +109,11 @@ python data_collection/scripts/prepare_llama_index_for_retrieve.py --root-dir $R
 python data_collection/scripts/run_retrieve_with_llama_index --root-dir $ROOT_DIR --datapath OUTPUT_OF_MORAL_JUDGMENT_PYTHON_SCRIPT
 ```
 
-### Fine-tuning Models with Synthesized NormLens
+## Exploring NormLens with visualization
+
+You can take a look into [Jupyter notebook](https://github.com/wade3han/normlens/notebook/explore_normlens.ipynb).
+
+### Fine-tuning models with synthesized NormLens
 
 Work in progress.
 
