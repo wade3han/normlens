@@ -16,14 +16,17 @@ Our NormLens dataset is a multimodal benchmark to evaluate how well models align
 
 ## How can I use NormLens?
 
-### Using the script provided in this repository
+### Option 1. Using the script provided in this repository
 First, install the package:
 
 ```bash
 git clone https://github.com/wade3han/normlens && cd normlens
-pip install -r requirements.txt
-# or use pip install specific packages
-pip install tqdm numpy jsonlines pycocoevalcap rouge-score tabulate openai llama-index
+
+# if you only want to download the data itself, then just run:
+pip install requests tqdm
+
+# else:
+pip install -r requirements.txt  # or use pip install tqdm numpy jsonlines pycocoevalcap rouge-score tabulate openai llama-index
 ```
 
 Then download the dataset:
@@ -36,7 +39,7 @@ python download_dataset.py
 # image/   high_agreement.jsonl    mid_agreement.jsonl
 ```
 
-### Downloading from google cloud directly using URL
+### Option 2. Downloading from google cloud directly using URL
 ```bash
 wget https://storage.googleapis.com/ai2-mosaic-public/projects/normlens/normlens_dataset.zip
 unzip normlens_dataset.zip
@@ -111,7 +114,7 @@ python data_collection/scripts/run_retrieve_with_llama_index --root-dir $ROOT_DI
 
 ## Exploring NormLens with visualization
 
-You can take a look into [Jupyter notebook](https://github.com/wade3han/normlens/notebook/explore_normlens.ipynb).
+You can take a look into [Jupyter notebook](https://github.com/wade3han/normlens/blob/main/notebook/explore_normlens.ipynb).
 
 ### Fine-tuning models with synthesized NormLens
 
