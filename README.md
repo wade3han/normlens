@@ -59,7 +59,7 @@ The prediction file should be a jsonl file, where each line is a json object wit
 Then, you can evaluate your model's predictions on NormLens-HA/MA using the following command:
 
 ```bash
-export REFERENCE_PATH="./data/high_agreement.jsonl"  # or use "./data/high_agreement.jsonl"
+export REFERENCE_PATH="./high_agreement.jsonl"  # or use "./mid_agreement.jsonl"
 export PREDICTION_PATH="./predictions.jsonl"
 export DATASET_TYPE="high_agreement"  # or use "mid_agreement"
 export OUTPUT_CSV_PATH="./output.csv"
@@ -116,7 +116,7 @@ python data_collection/scripts/run_retrieve_with_llama_index --root-dir $ROOT_DI
 
 You can take a look into [Jupyter notebook](https://github.com/wade3han/normlens/blob/main/notebook/explore_normlens.ipynb).
 
-### Fine-tuning models with synthesized NormLens
+## Fine-tuning models with synthesized NormLens
 
 Work in progress.
 
