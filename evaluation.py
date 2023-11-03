@@ -92,7 +92,7 @@ def load_reference_data(reference_path: str) -> Dict[int, Dict[str, Any]]:
     """
     Example of single instance:
         {"question_id": 924,
-         "image": "https://storage.googleapis.com/ai2-mosaic-public/projects/normlens/image/3612252751541471262.jpg",
+         "image": "3612252751541471262.jpg",
          "text": "have a barbecue with friends and family",
          "answer_judgment": [2, 2, 2, 2],
          "answer_explanation": ["You cannot have a barbecue while studying in your room.",

@@ -29,13 +29,12 @@ pip install requests tqdm
 pip install -r requirements.txt  # or use pip install tqdm numpy jsonlines pycocoevalcap rouge-score tabulate openai llama-index
 ```
 
-Then download the dataset:
+Then unzip the dataset:
 ```bash
-# this will download the dataset to ./data
-python download_dataset.py
+unzip normlens_dataset.zip
 
 # you should see the following files in ./data
-# ls ./data
+# ls ./dataset
 # image/   high_agreement.jsonl    mid_agreement.jsonl
 ```
 
