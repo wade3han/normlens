@@ -4,8 +4,6 @@ For brief introduction, check out the [project page](https://seungjuhan.me/norml
 
 To read more, check out the [paper](https://arxiv.org/abs/2310.10418)!
 
-- [23/10/17] The dataset is not currently available for download. We will release the dataset soon. Stay tuned!
-
 ![NormLens Teaser](./assets/normlens_fig1.png)
 
 **Commonsense norms are dependent on their context. What if the context is given by image?**
